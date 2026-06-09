@@ -436,6 +436,7 @@ export const businessPlan = {
       label: 'Strategic Plan 2027–2029',
       blocks: [
         { heading: 'التوسع في العضويات', paragraphs: ['زيادة الإيرادات المتكررة.'] },
+        { heading: 'التوسع في إنفاق العملاء' },
         { heading: 'التوسع في العقود المؤسسية', paragraphs: ['التوسع مع الجهات الحكومية والشركات الكبرى.'] },
         { heading: 'التوسع التقني', paragraphs: ['تعزيز المنصة وتطبيقات الذكاء الاصطناعي.'] },
         { heading: 'تشغيل الوجهات', paragraphs: ['التوسع في تشغيل خدمات الكونسيرج والضيافة داخل المشاريع الكبرى.'] },
@@ -962,6 +963,7 @@ const englishSectionOverrides = {
     label: 'Strategic Plan 2027–2029',
     blocks: [
       { heading: 'Membership Expansion', paragraphs: ['Increase recurring revenue.'] },
+      { heading: 'Expansion in Client Spending' },
       { heading: 'Corporate Contract Expansion', paragraphs: ['Expand with government entities and major companies.'] },
       { heading: 'Technology Expansion', paragraphs: ['Enhance the platform and artificial intelligence applications.'] },
       { heading: 'Destination Operations', paragraphs: ['Expand concierge and hospitality service operations inside major projects.'] },
