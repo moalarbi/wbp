@@ -165,7 +165,7 @@ export const businessPlan = {
       ],
       blocks: [
         {
-          heading: 'أولاً: إدارة السفر (Travel Management)',
+          heading: 'إدارة السفر',
           intro: 'تشمل الخدمات:',
           bullets: [
             'الطيران الخاص',
@@ -183,10 +183,10 @@ export const businessPlan = {
             'التأمين على السفر',
             'الحراسة الشخصية',
           ],
-          target: 'الأفراد، كبار الشخصيات، أصحاب الثروات، التنفيذيون، العائلات، الشركات، الوفود الرسمية.',
+          target: 'كبار الشخصيات، أصحاب الثروات، التنفيذيون، العائلات، الشركات، الوفود الرسمية.',
         },
         {
-          heading: 'ثانياً: إدارة نمط الحياة (Lifestyle Concierge)',
+          heading: 'إدارة نمط الحياة',
           intro: 'تشمل الخدمات:',
           bullets: [
             'حجوزات المطاعم',
@@ -210,7 +210,7 @@ export const businessPlan = {
           target: 'كبار الشخصيات، أصحاب الثروات، العائلات، التنفيذيون، أعضاء العضويات الحصرية.',
         },
         {
-          heading: 'ثالثاً: كونسيرج الأعمال (Business Concierge)',
+          heading: 'كونسيرج الأعمال',
           intro: 'تشمل الخدمات:',
           bullets: [
             'إدارة الممتلكات والعقارات',
@@ -713,7 +713,7 @@ const englishSectionOverrides = {
     ],
     blocks: [
       {
-        heading: 'First: Travel Management',
+        heading: 'Travel Management',
         intro: 'Services include:',
         bullets: [
           'Private aviation',
@@ -731,10 +731,10 @@ const englishSectionOverrides = {
           'Travel insurance',
           'Personal security',
         ],
-        target: 'Individuals, VIPs, high-net-worth clients, executives, families, companies, and official delegations.',
+        target: 'VIPs, high-net-worth clients, executives, families, companies, and official delegations.',
       },
       {
-        heading: 'Second: Lifestyle Concierge',
+        heading: 'Lifestyle Concierge',
         intro: 'Services include:',
         bullets: [
           'Restaurant reservations',
@@ -758,7 +758,7 @@ const englishSectionOverrides = {
         target: 'VIP clients, high-net-worth clients, families, executives, and members of exclusive memberships.',
       },
       {
-        heading: 'Third: Business Concierge',
+        heading: 'Business Concierge',
         intro: 'Services include:',
         bullets: [
           'Property and real estate management',
