@@ -487,6 +487,15 @@ html[dir='ltr'] .cover-subtitle span + span {
   margin-top: 14px;
 }
 
+.inline-emphasis {
+  color: var(--navy-deep);
+  font-weight: 700;
+}
+
+.exec-summary .inline-emphasis {
+  color: #ffffff;
+}
+
 .section-closing {
   color: var(--navy-deep);
   font-weight: 600;
@@ -709,10 +718,6 @@ html[dir='ltr'] .cover-subtitle span + span {
   line-height: 1.65;
 }
 
-.recharts-tooltip-wrapper {
-  transform: translate(18px, 18px) !important;
-}
-
 .chart-tooltip strong {
   display: block;
   font-size: 12px;
@@ -776,6 +781,23 @@ html[dir='ltr'] .cover-subtitle span + span {
   height: 3px;
   background: var(--legend-color);
   transform: translateY(-50%);
+}
+
+.chart-legend-line .chart-legend-symbol-netProfit::before {
+  background: repeating-linear-gradient(
+    to left,
+    var(--legend-color) 0 10px,
+    transparent 10px 15px
+  );
+}
+
+.chart-legend-line .chart-legend-symbol-netMargin::before {
+  height: 2px;
+  background: repeating-linear-gradient(
+    to left,
+    var(--legend-color) 0 4px,
+    transparent 4px 8px
+  );
 }
 
 .chart-legend-line .chart-legend-symbol::after {

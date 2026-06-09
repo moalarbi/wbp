@@ -26,6 +26,12 @@ const chartColors = {
 };
 
 const distributionColors = [chartColors.navyLight, '#8EA0B2', chartColors.beigeSand];
+const financialSeriesColors = {
+  revenue: '#1F466D',
+  membershipRevenue: '#C8BCA9',
+  netProfit: '#8A6A3F',
+  netMargin: '#6F7D68',
+};
 const projectColors = [
   chartColors.navyMid,
   chartColors.navyLight,
@@ -39,6 +45,9 @@ const languageOptions = [
   { code: 'ar', label: 'AR', ariaLabel: 'العربية' },
   { code: 'en', label: 'EN', ariaLabel: 'English' },
 ];
+
+const inlineEmphasisPattern = /(وصول كونسيرج|WOSOL Concierge)/g;
+const inlineEmphasisPhrases = new Set(['وصول كونسيرج', 'WOSOL Concierge']);
 
 const localizedCopy = {
   ar: {
@@ -273,7 +282,7 @@ function ExecutiveSummary({ section }) {
     <div className="exec-summary">
       <span className="exec-label">{section.label}</span>
       {section.paragraphs.map((paragraph) => (
-        <p key={paragraph}>{paragraph}</p>
+        <p key={paragraph}>{renderInlineText(paragraph)}</p>
       ))}
     </div>
   );
@@ -324,10 +333,24 @@ function Paragraphs({ paragraphs }) {
   return (
     <div className="prose-block">
       {paragraphs.map((paragraph) => (
-        <p key={paragraph}>{paragraph}</p>
+        <p key={paragraph}>{renderInlineText(paragraph)}</p>
       ))}
     </div>
   );
+}
+
+function renderInlineText(text) {
+  return String(text)
+    .split(inlineEmphasisPattern)
+    .map((part, index) =>
+      inlineEmphasisPhrases.has(part) ? (
+        <strong className="inline-emphasis" key={`${part}-${index}`}>
+          {part}
+        </strong>
+      ) : (
+        part
+      ),
+    );
 }
 
 function BlocksGrid({ blocks, copy }) {
@@ -346,7 +369,7 @@ function BlocksGrid({ blocks, copy }) {
             </p>
           ) : null}
           {block.after
-            ? block.after.split('\n').map((paragraph) => <p key={paragraph}>{paragraph}</p>)
+            ? block.after.split('\n').map((paragraph) => <p key={paragraph}>{renderInlineText(paragraph)}</p>)
             : null}
         </article>
       ))}
@@ -477,7 +500,7 @@ function ChartLegend({ payload = [], variant = 'line' }) {
         <div className="chart-legend-item" key={`${entry.dataKey}-${entry.value}`}>
           <span className="chart-legend-label">{entry.value}</span>
           <span
-            className="chart-legend-symbol"
+            className={`chart-legend-symbol chart-legend-symbol-${entry.dataKey}`}
             style={{ '--legend-color': entry.color }}
             aria-hidden="true"
           />
@@ -511,7 +534,8 @@ const amountAxisTick = {
 };
 
 const fixedTooltipProps = {
-  position: { x: 18, y: 18 },
+  offset: 16,
+  allowEscapeViewBox: { x: false, y: false },
   wrapperStyle: {
     zIndex: 30,
     outline: 'none',
@@ -747,37 +771,38 @@ function FinancialForecastChart({ copy, language }) {
             name={copy.series.revenue}
             type="monotone"
             dataKey="revenue"
-            stroke={chartColors.navyLight}
+            stroke={financialSeriesColors.revenue}
             strokeWidth={3}
-            dot={{ r: 4, fill: chartColors.navyLight, stroke: '#ffffff', strokeWidth: 2 }}
+            dot={{ r: 4, fill: financialSeriesColors.revenue, stroke: '#ffffff', strokeWidth: 2 }}
           />
           <Line
             yAxisId="amount"
             name={copy.series.membershipRevenue}
             type="monotone"
             dataKey="membershipRevenue"
-            stroke={chartColors.beigeSand}
+            stroke={financialSeriesColors.membershipRevenue}
             strokeWidth={3}
-            dot={{ r: 4, fill: chartColors.beigeSand, stroke: '#ffffff', strokeWidth: 2 }}
+            dot={{ r: 4, fill: financialSeriesColors.membershipRevenue, stroke: '#ffffff', strokeWidth: 2 }}
           />
           <Line
             yAxisId="amount"
             name={copy.series.netProfit}
             type="monotone"
             dataKey="netProfit"
-            stroke={chartColors.navyMid}
+            stroke={financialSeriesColors.netProfit}
             strokeWidth={3}
-            dot={{ r: 4, fill: chartColors.navyMid, stroke: '#ffffff', strokeWidth: 2 }}
+            strokeDasharray="9 4"
+            dot={{ r: 4, fill: financialSeriesColors.netProfit, stroke: '#ffffff', strokeWidth: 2 }}
           />
           <Line
             yAxisId="percent"
             name={copy.series.netMargin}
             type="monotone"
             dataKey="netMargin"
-            stroke={chartColors.textLight}
-            strokeWidth={2}
-            strokeDasharray="6 5"
-            dot={{ r: 4, fill: chartColors.textLight, stroke: '#ffffff', strokeWidth: 2 }}
+            stroke={financialSeriesColors.netMargin}
+            strokeWidth={2.5}
+            strokeDasharray="3 4"
+            dot={{ r: 4, fill: financialSeriesColors.netMargin, stroke: '#ffffff', strokeWidth: 2 }}
           />
         </ComposedChart>
       </ResponsiveContainer>
