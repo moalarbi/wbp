@@ -545,6 +545,22 @@ html[dir='ltr'] .cover-subtitle span + span {
   text-align: center;
 }
 
+#section-memberships .audience-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0 30px;
+}
+
+#section-memberships .audience-cards-grid .audience-card {
+  margin: 0;
+  text-align: start;
+}
+
+#section-memberships .audience-cards-grid .audience-card h3 {
+  text-align: center;
+}
+
 #section-business-sectors .audience-card h3,
 #section-memberships .audience-card h3 {
   color: var(--navy-deep);
@@ -571,6 +587,10 @@ html[dir='ltr'] .cover-subtitle span + span {
   max-width: 760px;
   margin: 22px auto 0;
   text-align: start;
+}
+
+#section-memberships .audience-cards-grid .bullet-list {
+  max-width: none;
 }
 
 .target-line {
@@ -1245,6 +1265,10 @@ html[dir='ltr'] th {
   #section-business-sectors .audience-card,
   #section-memberships .audience-card {
     padding: 24px 20px;
+  }
+
+  #section-memberships .audience-cards-grid {
+    grid-template-columns: 1fr;
   }
 
   .facts-list div,

@@ -25,7 +25,7 @@ const chartColors = {
   textLight: 'var(--text-light)',
 };
 
-const distributionColors = [chartColors.navyLight, chartColors.navyMid, chartColors.beigeSand];
+const distributionColors = [chartColors.navyLight, '#8EA0B2', chartColors.beigeSand];
 const projectColors = [
   chartColors.navyMid,
   chartColors.navyLight,
@@ -42,7 +42,7 @@ const languageOptions = [
 
 const localizedCopy = {
   ar: {
-    documentTitle: 'WOSOL Concierge | خطة الأعمال 2026–2028',
+    documentTitle: 'WOSOL Concierge | خطة الأعمال 2027–2029',
     documentMap: 'Document Map',
     coverFactsAria: 'بيانات الغلاف',
     coverFacts: [
@@ -51,17 +51,17 @@ const localizedCopy = {
       ['النشاط الرئيسي', 'إدارة نمط الحياة وخدمات الكونسيرج'],
     ],
     targetLabel: 'الفئة المستهدفة:',
-    footerMeta: 'Confidential · 2026–2028',
+    footerMeta: 'Confidential · 2027–2029',
     totalLabel: 'الإجمالي',
     expectedTotalLabel: 'إجمالي متوقع',
     totalRevenue2025: '23.79 مليون ريال',
-    currentProjectsTotal: '13.965M ريال',
+    currentProjectsTotal: '9.965M ريال',
     chartTitles: {
       membershipRevenue: ['نمو إيرادات العضويات', 'Membership Revenue'],
       historicalRevenue: ['نمو الإيرادات التاريخي', 'Historical Revenue Growth'],
       revenueDistribution2025: ['توزيع الإيرادات حسب القطاعات 2025', 'Revenue Distribution 2025'],
       currentProjects: ['الإيرادات السنوية المتوقعة من المشاريع الحالية', 'Current Projects Revenue'],
-      financialForecast: ['التوقعات المالية 2026–2028', 'Financial Forecasts'],
+      financialForecast: ['التوقعات المالية 2027–2029', 'Financial Forecasts'],
     },
     series: {
       revenue: 'الإيرادات',
@@ -71,7 +71,7 @@ const localizedCopy = {
     },
   },
   en: {
-    documentTitle: 'WOSOL Concierge | Business Plan 2026–2028',
+    documentTitle: 'WOSOL Concierge | Business Plan 2027–2029',
     documentMap: 'Document Map',
     coverFactsAria: 'Cover facts',
     coverFacts: [
@@ -80,17 +80,17 @@ const localizedCopy = {
       ['Primary Activity', 'Lifestyle management and concierge services'],
     ],
     targetLabel: 'Target Segment:',
-    footerMeta: 'Confidential · 2026–2028',
+    footerMeta: 'Confidential · 2027–2029',
     totalLabel: 'Total',
     expectedTotalLabel: 'Expected Total',
     totalRevenue2025: 'SAR 23.79 million',
-    currentProjectsTotal: 'SAR 13.965M',
+    currentProjectsTotal: 'SAR 9.965M',
     chartTitles: {
       membershipRevenue: ['Membership Revenue Growth', 'Membership Revenue'],
       historicalRevenue: ['Historical Revenue Growth', 'Historical Revenue Growth'],
       revenueDistribution2025: ['2025 Revenue Distribution by Segment', 'Revenue Distribution 2025'],
       currentProjects: ['Expected Annual Revenue from Current Projects', 'Current Projects Revenue'],
-      financialForecast: ['Financial Forecasts 2026–2028', 'Financial Forecasts'],
+      financialForecast: ['Financial Forecasts 2027–2029', 'Financial Forecasts'],
     },
     series: {
       revenue: 'Revenue',
@@ -118,7 +118,7 @@ const localizedChartData = {
       { ...chartData.revenueDistribution2025[2], sector: 'Government Entities', display: 'SAR 0.90 million' },
     ],
     currentProjects: [
-      { ...chartData.currentProjects[0], project: 'KAFD', display: 'SAR 10 million' },
+      { ...chartData.currentProjects[0], project: 'KAFD', display: 'SAR 6 million' },
       { ...chartData.currentProjects[1], project: 'Tameer', display: 'SAR 1.125 million' },
       { ...chartData.currentProjects[2], project: 'Al Mamlaka', display: 'SAR 800 thousand' },
       { ...chartData.currentProjects[3], project: 'Emergency Forces', display: 'SAR 1 million' },
@@ -307,6 +307,7 @@ function SectionBody({ section, copy, language }) {
       {section.bullets && !section.blocks ? <BulletGrid bullets={section.bullets} /> : null}
       {section.blocks ? <BlocksGrid blocks={section.blocks} copy={copy} /> : null}
       {section.audience ? <AudienceCard audience={section.audience} /> : null}
+      {section.audienceCards ? <AudienceCardsGrid cards={section.audienceCards} /> : null}
       {section.chart ? <ChartByType type={section.chart} copy={copy} language={language} /> : null}
       {section.table ? <DataTable table={section.table} /> : null}
       {section.closing ? <p className="section-closing">{section.closing}</p> : null}
@@ -361,6 +362,16 @@ function AudienceCard({ audience }) {
       <Paragraphs paragraphs={audience.paragraphs} />
       {audience.bullets ? <BulletGrid bullets={audience.bullets} compact /> : null}
     </article>
+  );
+}
+
+function AudienceCardsGrid({ cards }) {
+  return (
+    <div className="audience-cards-grid">
+      {cards.map((card) => (
+        <AudienceCard audience={card} key={card.title} />
+      ))}
+    </div>
   );
 }
 

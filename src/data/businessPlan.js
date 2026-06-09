@@ -1,8 +1,8 @@
 export const chartData = {
   membershipRevenue: [
-    { year: '2026', value: 3, display: '3 مليون ريال' },
-    { year: '2027', value: 6.5, display: '6.5 مليون ريال' },
-    { year: '2028', value: 12, display: '12 مليون ريال' },
+    { year: '2027', value: 3, display: '3 مليون ريال' },
+    { year: '2028', value: 6.5, display: '6.5 مليون ريال' },
+    { year: '2029', value: 12, display: '12 مليون ريال' },
   ],
   historicalRevenue: [
     { year: '2021', revenue: 6.9, display: '6.9 مليون ريال' },
@@ -17,7 +17,7 @@ export const chartData = {
     { sector: 'الجهات الحكومية', revenue: 0.9, display: '0.90 مليون ريال' },
   ],
   currentProjects: [
-    { project: 'KAFD', revenue: 10, display: '10 مليون ريال' },
+    { project: 'KAFD', revenue: 6, display: '6 مليون ريال' },
     { project: 'تعمير', revenue: 1.125, display: '1.125 مليون ريال' },
     { project: 'المملكة', revenue: 0.8, display: '800 ألف ريال' },
     { project: 'قوات الطوارئ', revenue: 1, display: '1 مليون ريال' },
@@ -26,7 +26,7 @@ export const chartData = {
   ],
   financialForecast: [
     {
-      year: '2026',
+      year: '2027',
       revenue: 33,
       membershipRevenue: 3,
       netProfit: 3.5,
@@ -37,7 +37,7 @@ export const chartData = {
       marginDisplay: '10.6%',
     },
     {
-      year: '2027',
+      year: '2028',
       revenue: 42.5,
       membershipRevenue: 6.5,
       netProfit: 6,
@@ -48,7 +48,7 @@ export const chartData = {
       marginDisplay: '14.1%',
     },
     {
-      year: '2028',
+      year: '2029',
       revenue: 55,
       membershipRevenue: 12,
       netProfit: 9.5,
@@ -64,7 +64,7 @@ export const chartData = {
 export const businessPlan = {
   title: 'وصول كونسيرج',
   subtitle: ['خطة الأعمال والتوقعات المالية'],
-  meta: 'Business Plan · Confidential · 2026–2028',
+  meta: 'Business Plan · Confidential · 2027–2029',
   sections: [
     {
       id: 'cover',
@@ -82,7 +82,7 @@ export const businessPlan = {
       paragraphs: [
         'تُعد شركة وصول كونسيرج أول شركة سعودية متخصصة في خدمات الكونسيرج وإدارة نمط الحياة، حيث تأسست عام 2011 في مدينة الرياض، ونجحت خلال أكثر من خمسة عشر عاماً في بناء مكانة رائدة في تقديم الخدمات الشخصية والتنفيذية الراقية للأفراد والشركات والجهات الحكومية وكبار الشخصيات.',
         'تقدم الشركة منظومة متكاملة من الخدمات تجمع بين إدارة السفر، وإدارة نمط الحياة، وكونسيرج الأعمال، بالإضافة إلى تشغيل خدمات الضيافة والوجهات، من خلال منصة تقنية مملوكة بالكامل للشركة تُمكّن العملاء من الوصول إلى الخدمات وإدارتها رقمياً.',
-        'وتسعى الشركة خلال الفترة من 2026 إلى 2028 إلى التحول من شركة خدمات كونسيرج تقليدية إلى منصة متكاملة لإدارة نمط الحياة والخدمات التنفيذية مدعومة بالتقنية، تجمع بين الخدمات الشخصية، والعقود المؤسسية، والعضويات الحصرية، والتشغيل المتخصص للضيافة.',
+        'وتسعى الشركة خلال الفترة من 2027 إلى 2029 إلى التحول من شركة خدمات كونسيرج تقليدية إلى منصة متكاملة لإدارة نمط الحياة والخدمات التنفيذية مدعومة بالتقنية، تجمع بين الخدمات الشخصية، والعقود المؤسسية، والعضويات الحصرية، والتشغيل المتخصص للضيافة.',
       ],
     },
     {
@@ -271,29 +271,33 @@ export const businessPlan = {
           ],
         },
       ],
-      audience: {
-        title: 'الأهداف الاستراتيجية للعضويات',
-        paragraphs: [
-          'تهدف الشركة إلى:',
-          'وتستهدف الشركة تحقيق نمو متدرج في إيرادات العضويات لتصل إلى:',
-        ],
-        bullets: [
-          'زيادة نسبة الإيرادات المتكررة.',
-          'تعزيز ولاء العملاء والاحتفاظ بهم.',
-          'رفع متوسط الإنفاق السنوي للعميل.',
-          'توسيع قاعدة أعضاء وصول كونسيرج من الأفراد والشركات.',
-          'دعم التكامل بين خدمات السفر، وإدارة نمط الحياة، وكونسيرج الأعمال.',
-        ],
-      },
+      audienceCards: [
+        {
+          title: 'الأهداف الاستراتيجية للعضويات',
+          paragraphs: [
+            'تمثل العضويات أحد المحركات الرئيسية للنمو المستقبلي للشركة، وتهدف إلى:',
+          ],
+          bullets: [
+            'بناء إيرادات متكررة ومستدامة.',
+            'تعزيز العلاقة طويلة الأمد مع الأعضاء.',
+            'رفع القيمة العمرية للعميل (Customer Lifetime Value).',
+            'توسيع قاعدة الأعضاء من الأفراد والشركات.',
+            'زيادة الاعتماد على خدمات نمط الحياة والسفر والأعمال.',
+            'دعم التوسع والتطوير المستقبلي للمنصة.',
+          ],
+        },
+        {
+          title: 'العضو المستهدف',
+          bullets: [
+            'أفراد ذوو ملاءة مالية عالية.',
+            'كبار التنفيذيين ورجال الأعمال.',
+            'العائلات والمكاتب العائلية.',
+            'شركات ومؤسسات مختارة.',
+            'متوسط إنفاق مستهدف يتجاوز 300 ألف ريال سنوياً.',
+          ],
+        },
+      ],
       chart: 'membershipRevenue',
-      table: {
-        headers: ['السنة', 'إيرادات العضويات'],
-        rows: [
-          ['2026', '3 مليون ريال'],
-          ['2027', '6.5 مليون ريال'],
-          ['2028', '12 مليون ريال'],
-        ],
-      },
       closing:
         'بما يجعل العضويات أحد أهم مصادر النمو المستدام والإيرادات طويلة الأجل لشركة وصول كونسيرج.',
     },
@@ -336,7 +340,7 @@ export const businessPlan = {
         { heading: 'أول شركة كونسيرج سعودية', paragraphs: ['خبرة تشغيلية تمتد لأكثر من خمسة عشر عاماً.'] },
         { heading: 'قاعدة بيانات حصرية', paragraphs: ['سجل متكامل لتفضيلات العملاء عالية القيمة.'] },
         { heading: 'منصة تقنية مملوكة', paragraphs: ['مرتبطة بأنظمة التشغيل الحديثة ومملوكة بالكامل للشركة.'] },
-        { heading: 'شبكة موردين متخصصة', paragraphs: ['علاقات استراتيجية محلية ودولية.'] },
+        { heading: 'شبكة موردين متخصصة', paragraphs: ['علاقات استراتيجية محلية وعالمية'] },
         { heading: 'عقود تشغيل مؤسسية', paragraphs: ['وجود فعلي داخل مشاريع ووجهات استراتيجية بالمملكة.'] },
       ],
     },
@@ -398,7 +402,7 @@ export const businessPlan = {
       table: {
         headers: ['المشروع', 'الإيراد السنوي المتوقع'],
         rows: [
-          ['KAFD', '10 مليون ريال'],
+          ['KAFD', '6 مليون ريال'],
           ['تعمير', '1.125 مليون ريال'],
           ['المملكة', '800 ألف ريال'],
           ['قوات الطوارئ', '1 مليون ريال'],
@@ -428,8 +432,8 @@ export const businessPlan = {
     {
       id: 'strategic-plan',
       number: '15',
-      title: 'الخطة الاستراتيجية 2026 – 2028',
-      label: 'Strategic Plan 2026–2028',
+      title: 'الخطة الاستراتيجية 2027 – 2029',
+      label: 'Strategic Plan 2027–2029',
       blocks: [
         { heading: 'التوسع في العضويات', paragraphs: ['زيادة الإيرادات المتكررة.'] },
         { heading: 'التوسع في العقود المؤسسية', paragraphs: ['التوسع مع الجهات الحكومية والشركات الكبرى.'] },
@@ -444,7 +448,7 @@ export const businessPlan = {
       label: 'Financial Forecasts',
       chart: 'financialForecast',
       table: {
-        headers: ['البند', '2026', '2027', '2028'],
+        headers: ['البند', '2027', '2028', '2029'],
         rows: [
           ['الإيرادات', '33 مليون ريال', '42.5 مليون ريال', '55 مليون ريال'],
           ['إيرادات العضويات', '3 مليون ريال', '6.5 مليون ريال', '12 مليون ريال'],
@@ -452,7 +456,7 @@ export const businessPlan = {
           ['هامش الربح الصافي', '10.6%', '14.1%', '17.3%'],
         ],
       },
-      closing: 'الأهداف الاستراتيجية بحلول 2028',
+      closing: 'الأهداف الاستراتيجية بحلول 2029',
       bullets: [
         'تجاوز 55 مليون ريال إيرادات سنوية.',
         'تحقيق صافي ربح يتجاوز 9.5 مليون ريال.',
@@ -640,7 +644,7 @@ const englishSectionOverrides = {
     paragraphs: [
       'WOSOL Concierge is the first Saudi company specialized in concierge services and lifestyle management. Founded in 2011 in Riyadh, the company has built a leading position over more than fifteen years in delivering premium personal and executive services to individuals, companies, government entities, and VIP clients.',
       'The company provides an integrated service ecosystem that combines travel management, lifestyle management, business concierge, and hospitality and destination service operations, supported by a fully owned technology platform that enables clients to access and manage services digitally.',
-      'From 2026 to 2028, the company aims to transform from a traditional concierge services company into an integrated lifestyle and executive services platform powered by technology, combining personal services, corporate contracts, exclusive memberships, and specialized hospitality operations.',
+      'From 2027 to 2029, the company aims to transform from a traditional concierge services company into an integrated lifestyle and executive services platform powered by technology, combining personal services, corporate contracts, exclusive memberships, and specialized hospitality operations.',
     ],
   },
   'company-overview': {
@@ -813,28 +817,32 @@ const englishSectionOverrides = {
         ],
       },
     ],
-    audience: {
-      title: 'Strategic Objectives of Memberships',
-      paragraphs: [
-        'The company aims to:',
-        'The company targets gradual growth in membership revenue to reach:',
-      ],
-      bullets: [
-        'Increase recurring revenue contribution.',
-        'Strengthen client loyalty and retention.',
-        'Raise average annual client spend.',
-        'Expand WOSOL Concierge membership base across individuals and companies.',
-        'Support integration between travel, lifestyle management, and business concierge services.',
-      ],
-    },
-    table: {
-      headers: ['Year', 'Membership Revenue'],
-      rows: [
-        ['2026', 'SAR 3 million'],
-        ['2027', 'SAR 6.5 million'],
-        ['2028', 'SAR 12 million'],
-      ],
-    },
+    audienceCards: [
+      {
+        title: 'Strategic Objectives of Memberships',
+        paragraphs: [
+          'Memberships represent one of the company’s key future growth drivers and aim to:',
+        ],
+        bullets: [
+          'Build recurring and sustainable revenue.',
+          'Strengthen long-term relationships with members.',
+          'Increase Customer Lifetime Value.',
+          'Expand the member base across individuals and companies.',
+          'Increase reliance on lifestyle, travel, and business services.',
+          'Support future expansion and platform development.',
+        ],
+      },
+      {
+        title: 'Target Member',
+        bullets: [
+          'High-net-worth individuals.',
+          'Senior executives and business owners.',
+          'Families and family offices.',
+          'Selected companies and institutions.',
+          'Target average spend exceeding SAR 300,000 annually.',
+        ],
+      },
+    ],
     closing:
       'This makes memberships one of the most important sources of sustainable growth and long-term revenue for WOSOL Concierge.',
   },
@@ -873,7 +881,7 @@ const englishSectionOverrides = {
       { heading: 'First Saudi Concierge Company', paragraphs: ['Operational experience extending over more than fifteen years.'] },
       { heading: 'Exclusive Database', paragraphs: ['An integrated record of high-value client preferences.'] },
       { heading: 'Owned Technology Platform', paragraphs: ['Connected to modern operating systems and fully owned by the company.'] },
-      { heading: 'Specialized Supplier Network', paragraphs: ['Strategic local and international relationships.'] },
+      { heading: 'Specialized Supplier Network', paragraphs: ['Strategic local and global relationships.'] },
       { heading: 'Corporate Operating Contracts', paragraphs: ['An active presence within strategic projects and destinations in the Kingdom.'] },
     ],
   },
@@ -924,7 +932,7 @@ const englishSectionOverrides = {
     table: {
       headers: ['Project', 'Expected Annual Revenue'],
       rows: [
-        ['KAFD', 'SAR 10 million'],
+        ['KAFD', 'SAR 6 million'],
         ['Tameer', 'SAR 1.125 million'],
         ['Al Mamlaka', 'SAR 800 thousand'],
         ['Emergency Forces', 'SAR 1 million'],
@@ -950,8 +958,8 @@ const englishSectionOverrides = {
     ],
   },
   'strategic-plan': {
-    title: 'Strategic Plan 2026 – 2028',
-    label: 'Strategic Plan 2026–2028',
+    title: 'Strategic Plan 2027 – 2029',
+    label: 'Strategic Plan 2027–2029',
     blocks: [
       { heading: 'Membership Expansion', paragraphs: ['Increase recurring revenue.'] },
       { heading: 'Corporate Contract Expansion', paragraphs: ['Expand with government entities and major companies.'] },
@@ -963,7 +971,7 @@ const englishSectionOverrides = {
     title: 'Financial Forecasts',
     label: 'Financial Forecasts',
     table: {
-      headers: ['Item', '2026', '2027', '2028'],
+      headers: ['Item', '2027', '2028', '2029'],
       rows: [
         ['Revenue', 'SAR 33 million', 'SAR 42.5 million', 'SAR 55 million'],
         ['Membership Revenue', 'SAR 3 million', 'SAR 6.5 million', 'SAR 12 million'],
@@ -971,7 +979,7 @@ const englishSectionOverrides = {
         ['Net Profit Margin', '10.6%', '14.1%', '17.3%'],
       ],
     },
-    closing: 'Strategic objectives by 2028',
+    closing: 'Strategic objectives by 2029',
     bullets: [
       'Exceed SAR 55 million in annual revenue.',
       'Achieve net profit exceeding SAR 9.5 million.',
@@ -1139,7 +1147,7 @@ const englishSectionOverrides = {
 export const businessPlanEn = {
   title: 'WOSOL Concierge',
   subtitle: ['Business Plan & Financial Forecast'],
-  meta: 'Business Plan · Confidential · 2026–2028',
+  meta: 'Business Plan · Confidential · 2027–2029',
   sections: businessPlan.sections.map((section) => ({
     ...section,
     ...englishSectionOverrides[section.id],
