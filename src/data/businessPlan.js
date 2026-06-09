@@ -165,27 +165,6 @@ export const businessPlan = {
       ],
       blocks: [
         {
-          heading: 'إدارة السفر',
-          intro: 'تشمل الخدمات:',
-          bullets: [
-            'الطيران الخاص',
-            'تذاكر الطيران',
-            'الهليكوبتر',
-            'اليخوت',
-            'الفنادق والمنتجعات',
-            'الفلل الخاصة',
-            'التأشيرات',
-            'خدمات الاستقبال والتوديع',
-            'الرحلات البحرية',
-            'الشاليهات',
-            'البنتهاوس',
-            'شوفير سيرفس',
-            'التأمين على السفر',
-            'الحراسة الشخصية',
-          ],
-          target: 'كبار الشخصيات، أصحاب الثروات، التنفيذيون، العائلات، الشركات، الوفود الرسمية.',
-        },
-        {
           heading: 'إدارة نمط الحياة',
           intro: 'تشمل الخدمات:',
           bullets: [
@@ -207,7 +186,26 @@ export const businessPlan = {
             'المدرب الشخصي',
             'خدمات التجميل والعناية بالشعر',
           ],
-          target: 'كبار الشخصيات، أصحاب الثروات، العائلات، التنفيذيون، أعضاء العضويات الحصرية.',
+        },
+        {
+          heading: 'إدارة السفر',
+          intro: 'تشمل الخدمات:',
+          bullets: [
+            'الطيران الخاص',
+            'تذاكر الطيران',
+            'الهليكوبتر',
+            'اليخوت',
+            'الفنادق والمنتجعات',
+            'الفلل الخاصة',
+            'التأشيرات',
+            'خدمات الاستقبال والتوديع',
+            'الرحلات البحرية',
+            'الشاليهات',
+            'البنتهاوس',
+            'شوفير سيرفس',
+            'التأمين على السفر',
+            'الحراسة الشخصية',
+          ],
         },
         {
           heading: 'كونسيرج الأعمال',
@@ -223,15 +221,19 @@ export const businessPlan = {
             'الدورات والبرامج التدريبية',
             'خدمات الترجمة والتحرير',
           ],
-          target: 'الشركات، المكاتب العائلية، المستثمرون، الجهات الحكومية، كبار التنفيذيين.',
         },
       ],
+      audience: {
+        title: 'الفئة المستهدفة',
+        body:
+          'تستهدف وصول كونسيرج الأفراد ذوي الملاءة المالية العالية، وكبار الشخصيات، والتنفيذيين، ورجال الأعمال، والمكاتب العائلية، والشركات والجهات المتميزة، ممن يبحثون عن إدارة احترافية لنمط الحياة والسفر والأعمال، والوصول إلى خدمات وتجارب مصممة وفق أعلى معايير الجودة والخصوصية.',
+      },
     },
     {
       id: 'service-model',
       number: '06',
-      title: 'نموذج تقديم الخدمة',
-      label: 'Service Delivery Model',
+      title: 'المنظومة التشغيلية',
+      label: 'Operational Framework',
       paragraphs: ['تعتمد وصول كونسيرج على نموذج تشغيلي موحد يرتكز على:'],
       bullets: [
         'مدير علاقة مخصص',
@@ -251,15 +253,15 @@ export const businessPlan = {
       label: 'Membership Model',
       blocks: [
         {
-          heading: 'عضوية Premier',
-          paragraphs: [
-            'مخصصة لرجال الأعمال والتنفيذيين والأفراد الباحثين عن إدارة احترافية لنمط الحياة.',
-          ],
-        },
-        {
           heading: 'عضوية Prestige',
           paragraphs: [
             'مخصصة للشركات والمؤسسات الراغبة في توفير خدمات الكونسيرج لعملائها أو موظفيها.',
+          ],
+        },
+        {
+          heading: 'عضوية Premier',
+          paragraphs: [
+            'مخصصة لرجال الأعمال والتنفيذيين والأفراد الباحثين عن إدارة احترافية لنمط الحياة.',
           ],
         },
         {
@@ -713,27 +715,6 @@ const englishSectionOverrides = {
     ],
     blocks: [
       {
-        heading: 'Travel Management',
-        intro: 'Services include:',
-        bullets: [
-          'Private aviation',
-          'Airline tickets',
-          'Helicopter',
-          'Yachts',
-          'Hotels and resorts',
-          'Private villas',
-          'Visas',
-          'Meet-and-assist services',
-          'Cruises',
-          'Chalets',
-          'Penthouses',
-          'Chauffeur service',
-          'Travel insurance',
-          'Personal security',
-        ],
-        target: 'VIPs, high-net-worth clients, executives, families, companies, and official delegations.',
-      },
-      {
         heading: 'Lifestyle Concierge',
         intro: 'Services include:',
         bullets: [
@@ -755,7 +736,26 @@ const englishSectionOverrides = {
           'Personal trainer',
           'Beauty and hair care services',
         ],
-        target: 'VIP clients, high-net-worth clients, families, executives, and members of exclusive memberships.',
+      },
+      {
+        heading: 'Travel Management',
+        intro: 'Services include:',
+        bullets: [
+          'Private aviation',
+          'Airline tickets',
+          'Helicopter',
+          'Yachts',
+          'Hotels and resorts',
+          'Private villas',
+          'Visas',
+          'Meet-and-assist services',
+          'Cruises',
+          'Chalets',
+          'Penthouses',
+          'Chauffeur service',
+          'Travel insurance',
+          'Personal security',
+        ],
       },
       {
         heading: 'Business Concierge',
@@ -771,13 +771,17 @@ const englishSectionOverrides = {
           'Courses and training programs',
           'Translation and editing services',
         ],
-        target: 'Companies, family offices, investors, government entities, and senior executives.',
       },
     ],
+    audience: {
+      title: 'Target Audience',
+      body:
+        'WOSOL Concierge targets high-net-worth individuals, VIPs, executives, business leaders, family offices, and distinguished companies and entities seeking professional management of lifestyle, travel, and business, with access to services and experiences designed according to the highest standards of quality and privacy.',
+    },
   },
   'service-model': {
-    title: 'Service Delivery Model',
-    label: 'Service Delivery Model',
+    title: 'Operational Framework',
+    label: 'Operational Framework',
     paragraphs: ['WOSOL Concierge relies on a unified operating model built around:'],
     bullets: [
       'Dedicated relationship manager',
@@ -795,12 +799,12 @@ const englishSectionOverrides = {
     label: 'Membership Model',
     blocks: [
       {
-        heading: 'Premier Membership',
-        paragraphs: ['Designed for businesspeople, executives, and individuals seeking professional lifestyle management.'],
-      },
-      {
         heading: 'Prestige Membership',
         paragraphs: ['Designed for companies and institutions that wish to provide concierge services to their clients or employees.'],
+      },
+      {
+        heading: 'Premier Membership',
+        paragraphs: ['Designed for businesspeople, executives, and individuals seeking professional lifestyle management.'],
       },
       {
         heading: 'Imperial Membership',

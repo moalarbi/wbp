@@ -532,6 +532,30 @@ html[dir='ltr'] .cover-subtitle span + span {
   text-align: center;
 }
 
+#section-business-sectors .audience-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--beige-sand);
+  margin: 18px 0 30px;
+  padding: 28px 32px;
+  text-align: center;
+}
+
+#section-business-sectors .audience-card h3 {
+  color: var(--navy-deep);
+  font-size: 18px;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+#section-business-sectors .audience-card p {
+  color: var(--text-body);
+  font-size: 15.5px;
+  line-height: 2;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
 .target-line {
   border-top: 1px solid var(--border);
   margin-top: 20px;
@@ -1197,6 +1221,10 @@ html[dir='ltr'] th {
     grid-template-columns: 1fr;
     overflow-x: visible;
     padding-bottom: 0;
+  }
+
+  #section-business-sectors .audience-card {
+    padding: 24px 20px;
   }
 
   .facts-list div,

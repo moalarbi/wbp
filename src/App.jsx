@@ -306,6 +306,7 @@ function SectionBody({ section, copy, language }) {
       {section.facts ? <FactsTable facts={section.facts} /> : null}
       {section.bullets && !section.blocks ? <BulletGrid bullets={section.bullets} /> : null}
       {section.blocks ? <BlocksGrid blocks={section.blocks} copy={copy} /> : null}
+      {section.audience ? <AudienceCard audience={section.audience} /> : null}
       {section.chart ? <ChartByType type={section.chart} copy={copy} language={language} /> : null}
       {section.table ? <DataTable table={section.table} /> : null}
       {section.closing ? <p className="section-closing">{section.closing}</p> : null}
@@ -349,6 +350,15 @@ function BlocksGrid({ blocks, copy }) {
         </article>
       ))}
     </div>
+  );
+}
+
+function AudienceCard({ audience }) {
+  return (
+    <article className="audience-card">
+      <h3>{audience.title}</h3>
+      <p>{audience.body}</p>
+    </article>
   );
 }
 
