@@ -93,8 +93,8 @@ textarea {
   background: transparent;
   color: var(--text-light);
   cursor: pointer;
-  padding: 7px 10px;
-  min-width: 58px;
+  padding: 7px 9px;
+  min-width: 38px;
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
   line-height: 1;

@@ -36,8 +36,8 @@ const projectColors = [
 ];
 
 const languageOptions = [
-  { code: 'ar', label: 'عربي' },
-  { code: 'en', label: 'English' },
+  { code: 'ar', label: 'AR', ariaLabel: 'العربية' },
+  { code: 'en', label: 'EN', ariaLabel: 'English' },
 ];
 
 const localizedCopy = {
@@ -186,6 +186,7 @@ function LanguageToggle({ language, onLanguageChange }) {
           key={option.code}
           type="button"
           className={language === option.code ? 'active' : ''}
+          aria-label={option.ariaLabel}
           aria-pressed={language === option.code}
           onClick={() => onLanguageChange(option.code)}
         >
