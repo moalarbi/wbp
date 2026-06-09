@@ -72,10 +72,12 @@ textarea {
   margin-bottom: 72px;
 }
 
-.header-actions {
+.header-meta-group {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 14px;
+  direction: ltr;
+  flex-wrap: wrap;
 }
 
 .language-toggle {

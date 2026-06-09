@@ -63,7 +63,7 @@ export const chartData = {
 
 export const businessPlan = {
   title: 'وصول كونسيرج',
-  subtitle: ['خطة الأعمال والتوقعات المالية', 'Business Plan & Financial Forecast'],
+  subtitle: ['خطة الأعمال والتوقعات المالية'],
   meta: 'Business Plan · Confidential · 2026–2028',
   sections: [
     {
@@ -129,7 +129,7 @@ export const businessPlan = {
         {
           heading: 'الرسالة',
           paragraphs: [
-            'تقديم تجربة استثنائية للعملاء من خلال توفير حلول متكاملة لإدارة السفر ونمط الحياة والخدمات التنفيذية بأعلى معايير الجودة والخصوصية والاحترافية.',
+            'تقديم تجربة استثنائية للعملاء من خلال توفير حلول متكاملة لإدارة نمط الحياة والسفر والأعمال بأعلى معايير الجودة والخصوصية والاحترافية.',
           ],
         },
       ],
@@ -140,20 +140,20 @@ export const businessPlan = {
       title: 'الفرصة السوقية',
       label: 'Market Opportunity',
       paragraphs: [
-        'تشهد المملكة العربية السعودية نمواً متسارعاً في القطاعات التالية:',
+        'تشهد المملكة العربية السعودية نمواً متسارعاً في القطاعات المرتبطة بإدارة نمط الحياة والسفر والضيافة والخدمات المتميزة، مدعوماً بمستهدفات رؤية المملكة 2030',
       ],
       bullets: [
         'السياحة الفاخرة',
         'الضيافة الراقية',
         'الطيران الخاص',
-        'المجتمعات السكنية الفاخرة',
-        'المشاريع العملاقة',
+        'البنوك الخاصة',
+        'المشاريع الاستراتيجية',
+        'المشاريع النوعية',
         'الأندية الخاصة',
-        'برامج الولاء',
-        'خدمات كبار الشخصيات',
+        'تجربة العملاء والكونسيرج',
       ],
       closing:
-        'ويؤدي هذا النمو إلى زيادة الطلب على خدمات الكونسيرج وإدارة نمط الحياة والخدمات التنفيذية، مما يمنح الشركة فرصاً كبيرة للتوسع خلال السنوات القادمة.',
+        'ويؤدي هذا النمو إلى زيادة الطلب على خدمات إدارة نمط الحياة وإدارة السفر وخدمات الكونسيرج وتشغيل تجربة العملاء، مما يمنح وصول كونسيرج فرصة استراتيجية للتوسع وتعزيز حضورها في القطاعات ذات القيمة المرتفعة داخل المملكة وخارجها.',
     },
     {
       id: 'business-sectors',
@@ -170,6 +170,7 @@ export const businessPlan = {
           bullets: [
             'الطيران الخاص',
             'تذاكر الطيران',
+            'الهليكوبتر',
             'اليخوت',
             'الفنادق والمنتجعات',
             'الفلل الخاصة',
@@ -177,15 +178,10 @@ export const businessPlan = {
             'خدمات الاستقبال والتوديع',
             'الرحلات البحرية',
             'الشاليهات',
-            'الشقق الفندقية',
             'البنتهاوس',
-            'تأجير السيارات',
-            'خدمات السائق الخاص',
-            'الرخص الدولية للقيادة',
+            'شوفير سيرفس',
             'التأمين على السفر',
             'الحراسة الشخصية',
-            'النقل الأمني',
-            'خدمات الهليكوبتر',
           ],
           target: 'الأفراد، كبار الشخصيات، أصحاب الثروات، التنفيذيون، العائلات، الشركات، الوفود الرسمية.',
         },
@@ -685,7 +681,7 @@ const englishSectionOverrides = {
       {
         heading: 'Mission',
         paragraphs: [
-          'To deliver an exceptional client experience by providing integrated solutions for travel management, lifestyle, and executive services with the highest standards of quality, privacy, and professionalism.',
+          'To deliver an exceptional client experience by providing integrated solutions for lifestyle, travel, and business management with the highest standards of quality, privacy, and professionalism.',
         ],
       },
     ],
@@ -693,19 +689,21 @@ const englishSectionOverrides = {
   'market-opportunity': {
     title: 'Market Opportunity',
     label: 'Market Opportunity',
-    paragraphs: ['The Kingdom of Saudi Arabia is witnessing accelerated growth across the following sectors:'],
+    paragraphs: [
+      'The Kingdom of Saudi Arabia is witnessing accelerated growth in sectors related to lifestyle management, travel, hospitality, and premium services, supported by the objectives of Saudi Vision 2030',
+    ],
     bullets: [
       'Luxury tourism',
       'Premium hospitality',
       'Private aviation',
-      'Luxury residential communities',
-      'Giga-projects',
+      'Private banking',
+      'Strategic projects',
+      'Distinctive projects',
       'Private clubs',
-      'Loyalty programs',
-      'VIP services',
+      'Customer experience and concierge',
     ],
     closing:
-      'This growth is increasing demand for concierge services, lifestyle management, and executive services, giving the company significant expansion opportunities over the coming years.',
+      'This growth is increasing demand for lifestyle management, travel management, concierge services, and customer experience operations, giving WOSOL Concierge a strategic opportunity to expand and strengthen its presence in high-value sectors inside and outside the Kingdom.',
   },
   'business-sectors': {
     title: 'Core Business Segments',
@@ -720,6 +718,7 @@ const englishSectionOverrides = {
         bullets: [
           'Private aviation',
           'Airline tickets',
+          'Helicopter',
           'Yachts',
           'Hotels and resorts',
           'Private villas',
@@ -727,15 +726,10 @@ const englishSectionOverrides = {
           'Meet-and-assist services',
           'Cruises',
           'Chalets',
-          'Hotel apartments',
           'Penthouses',
-          'Car rental',
-          'Private chauffeur services',
-          'International driving permits',
+          'Chauffeur service',
           'Travel insurance',
           'Personal security',
-          'Secure transportation',
-          'Helicopter services',
         ],
         target: 'Individuals, VIPs, high-net-worth clients, executives, families, companies, and official delegations.',
       },
@@ -1138,7 +1132,7 @@ const englishSectionOverrides = {
 
 export const businessPlanEn = {
   title: 'WOSOL Concierge',
-  subtitle: ['Business Plan & Financial Forecast', 'خطة الأعمال والتوقعات المالية'],
+  subtitle: ['Business Plan & Financial Forecast'],
   meta: 'Business Plan · Confidential · 2026–2028',
   sections: businessPlan.sections.map((section) => ({
     ...section,

@@ -169,11 +169,11 @@ function App() {
 function DocumentHeader({ plan, language, onLanguageChange }) {
   return (
     <header className="site-header">
-      <div className="header-meta">{plan.meta}</div>
-      <div className="header-actions">
+      <div className="header-meta-group">
+        <div className="header-meta">{plan.meta}</div>
         <LanguageToggle language={language} onLanguageChange={onLanguageChange} />
-        <LogoBlock />
       </div>
+      <LogoBlock />
     </header>
   );
 }
