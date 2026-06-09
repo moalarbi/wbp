@@ -267,24 +267,24 @@ export const businessPlan = {
         {
           heading: 'عضوية Imperial',
           paragraphs: [
-            'أعلى مستويات العضوية، وتقدم تجربة متكاملة وشخصية بالكامل مع أعلى درجات الخصوصية والدعم.',
-          ],
-        },
-        {
-          heading: 'الأهداف الاستراتيجية للعضويات',
-          intro: 'تهدف الشركة إلى:',
-          bullets: [
-            'زيادة نسبة الإيرادات المتكررة.',
-            'تعزيز ولاء العملاء والاحتفاظ بهم.',
-            'رفع متوسط الإنفاق السنوي للعميل.',
-            'توسيع قاعدة أعضاء وصول كونسيرج من الأفراد والشركات.',
-            'دعم التكامل بين خدمات السفر، وإدارة نمط الحياة، وكونسيرج الأعمال.',
-          ],
-          paragraphs: [
-            'وتستهدف الشركة تحقيق نمو متدرج في إيرادات العضويات لتصل إلى:',
+            'مخصصة للعملاء الذين يتطلبون أعلى درجات العناية الشخصية والخصوصية والوصول إلى خدمات وتجارب استثنائية حول العالم.',
           ],
         },
       ],
+      audience: {
+        title: 'الأهداف الاستراتيجية للعضويات',
+        paragraphs: [
+          'تهدف الشركة إلى:',
+          'وتستهدف الشركة تحقيق نمو متدرج في إيرادات العضويات لتصل إلى:',
+        ],
+        bullets: [
+          'زيادة نسبة الإيرادات المتكررة.',
+          'تعزيز ولاء العملاء والاحتفاظ بهم.',
+          'رفع متوسط الإنفاق السنوي للعميل.',
+          'توسيع قاعدة أعضاء وصول كونسيرج من الأفراد والشركات.',
+          'دعم التكامل بين خدمات السفر، وإدارة نمط الحياة، وكونسيرج الأعمال.',
+        ],
+      },
       chart: 'membershipRevenue',
       table: {
         headers: ['السنة', 'إيرادات العضويات'],
@@ -809,22 +809,24 @@ const englishSectionOverrides = {
       {
         heading: 'Imperial Membership',
         paragraphs: [
-          'The highest membership tier, offering a fully integrated and personalized experience with the highest levels of privacy and support.',
+          'Designed for clients who require the highest levels of personal care, privacy, and access to exceptional services and experiences around the world.',
         ],
-      },
-      {
-        heading: 'Strategic Objectives of Memberships',
-        intro: 'The company aims to:',
-        bullets: [
-          'Increase recurring revenue contribution.',
-          'Strengthen client loyalty and retention.',
-          'Raise average annual client spend.',
-          'Expand WOSOL Concierge membership base across individuals and companies.',
-          'Support integration between travel, lifestyle management, and business concierge services.',
-        ],
-        paragraphs: ['The company targets gradual growth in membership revenue to reach:'],
       },
     ],
+    audience: {
+      title: 'Strategic Objectives of Memberships',
+      paragraphs: [
+        'The company aims to:',
+        'The company targets gradual growth in membership revenue to reach:',
+      ],
+      bullets: [
+        'Increase recurring revenue contribution.',
+        'Strengthen client loyalty and retention.',
+        'Raise average annual client spend.',
+        'Expand WOSOL Concierge membership base across individuals and companies.',
+        'Support integration between travel, lifestyle management, and business concierge services.',
+      ],
+    },
     table: {
       headers: ['Year', 'Membership Revenue'],
       rows: [

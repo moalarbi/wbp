@@ -357,7 +357,9 @@ function AudienceCard({ audience }) {
   return (
     <article className="audience-card">
       <h3>{audience.title}</h3>
-      <p>{audience.body}</p>
+      {audience.body ? <p>{audience.body}</p> : null}
+      <Paragraphs paragraphs={audience.paragraphs} />
+      {audience.bullets ? <BulletGrid bullets={audience.bullets} compact /> : null}
     </article>
   );
 }
