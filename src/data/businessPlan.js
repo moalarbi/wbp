@@ -63,7 +63,7 @@ export const chartData = {
 
 export const businessPlan = {
   title: 'وصول كونسيرج',
-  subtitle: 'خطة الأعمال للأعوام 2026 – 2028',
+  subtitle: ['خطة الأعمال والتوقعات المالية', 'Business Plan & Financial Forecast'],
   meta: 'Business Plan · Confidential · 2026–2028',
   sections: [
     {
@@ -629,4 +629,519 @@ export const businessPlan = {
       ],
     },
   ],
+};
+
+const englishSectionOverrides = {
+  cover: {
+    title: 'Cover',
+    label: 'Cover',
+  },
+  'executive-summary': {
+    title: 'Executive Summary',
+    label: 'Executive Summary',
+    paragraphs: [
+      'WOSOL Concierge is the first Saudi company specialized in concierge services and lifestyle management. Founded in 2011 in Riyadh, the company has built a leading position over more than fifteen years in delivering premium personal and executive services to individuals, companies, government entities, and VIP clients.',
+      'The company provides an integrated service ecosystem that combines travel management, lifestyle management, business concierge, and hospitality and destination service operations, supported by a fully owned technology platform that enables clients to access and manage services digitally.',
+      'From 2026 to 2028, the company aims to transform from a traditional concierge services company into an integrated lifestyle and executive services platform powered by technology, combining personal services, corporate contracts, exclusive memberships, and specialized hospitality operations.',
+    ],
+  },
+  'company-overview': {
+    title: 'Company Overview',
+    label: 'Company Overview',
+    blocks: [
+      {
+        heading: 'General Information',
+        facts: [
+          ['Company Name', 'WOSOL Concierge'],
+          ['Founding Year', '2011'],
+          ['Headquarters', 'Riyadh – Kingdom of Saudi Arabia'],
+          ['Primary Activity', 'Lifestyle management and concierge services'],
+        ],
+      },
+      {
+        heading: 'Business Model',
+        bullets: [
+          'Travel management',
+          'Lifestyle management',
+          'Business concierge',
+          'Hospitality and customer experience operations',
+          'Exclusive memberships',
+          'Technology platform',
+          'Supplier and partner commissions',
+        ],
+      },
+    ],
+  },
+  'vision-mission': {
+    title: 'Vision and Mission',
+    label: 'Vision and Mission',
+    blocks: [
+      {
+        heading: 'Vision',
+        paragraphs: [
+          'To become the leading platform for lifestyle management and luxury services in the Kingdom of Saudi Arabia and the Gulf region.',
+        ],
+      },
+      {
+        heading: 'Mission',
+        paragraphs: [
+          'To deliver an exceptional client experience by providing integrated solutions for travel management, lifestyle, and executive services with the highest standards of quality, privacy, and professionalism.',
+        ],
+      },
+    ],
+  },
+  'market-opportunity': {
+    title: 'Market Opportunity',
+    label: 'Market Opportunity',
+    paragraphs: ['The Kingdom of Saudi Arabia is witnessing accelerated growth across the following sectors:'],
+    bullets: [
+      'Luxury tourism',
+      'Premium hospitality',
+      'Private aviation',
+      'Luxury residential communities',
+      'Giga-projects',
+      'Private clubs',
+      'Loyalty programs',
+      'VIP services',
+    ],
+    closing:
+      'This growth is increasing demand for concierge services, lifestyle management, and executive services, giving the company significant expansion opportunities over the coming years.',
+  },
+  'business-sectors': {
+    title: 'Core Business Segments',
+    label: 'Core Business Segments',
+    paragraphs: [
+      'WOSOL Concierge relies on three core business segments that form the foundation of the company\'s growth and future strategy. The company provides integrated solutions for travel management, lifestyle management, and executive services for individuals, companies, and government entities through a unified operational and technology platform.',
+    ],
+    blocks: [
+      {
+        heading: 'First: Travel Management',
+        intro: 'Services include:',
+        bullets: [
+          'Private aviation',
+          'Airline tickets',
+          'Yachts',
+          'Hotels and resorts',
+          'Private villas',
+          'Visas',
+          'Meet-and-assist services',
+          'Cruises',
+          'Chalets',
+          'Hotel apartments',
+          'Penthouses',
+          'Car rental',
+          'Private chauffeur services',
+          'International driving permits',
+          'Travel insurance',
+          'Personal security',
+          'Secure transportation',
+          'Helicopter services',
+        ],
+        target: 'Individuals, VIPs, high-net-worth clients, executives, families, companies, and official delegations.',
+      },
+      {
+        heading: 'Second: Lifestyle Concierge',
+        intro: 'Services include:',
+        bullets: [
+          'Restaurant reservations',
+          'Personal shopping',
+          'Personal care',
+          'Private occasions',
+          'Event bookings',
+          'Gifts',
+          'Personal assistant',
+          'Club memberships',
+          'Experiences and activities',
+          'Designers and fashion',
+          'Art and culture',
+          'Family services',
+          'Medical checkups',
+          'Private adventures and trips',
+          'Wellness resorts',
+          'Personal trainer',
+          'Beauty and hair care services',
+        ],
+        target: 'VIP clients, high-net-worth clients, families, executives, and members of exclusive memberships.',
+      },
+      {
+        heading: 'Third: Business Concierge',
+        intro: 'Services include:',
+        bullets: [
+          'Property and real estate management',
+          'Appointment and meeting management',
+          'Business gifts',
+          'Legal consultations',
+          'Investment services',
+          'Meeting rooms',
+          'Conference and event organization',
+          'Courses and training programs',
+          'Translation and editing services',
+        ],
+        target: 'Companies, family offices, investors, government entities, and senior executives.',
+      },
+    ],
+  },
+  'service-model': {
+    title: 'Service Delivery Model',
+    label: 'Service Delivery Model',
+    paragraphs: ['WOSOL Concierge relies on a unified operating model built around:'],
+    bullets: [
+      'Dedicated relationship manager',
+      'Approved supplier network',
+      'WOSOL Concierge application',
+      'Request and operations management system',
+      'Personal preference management',
+      '24/7 services',
+    ],
+    closing:
+      'This model enables clients to access all services through a single point of contact covering travel, lifestyle management, and business concierge needs.',
+  },
+  memberships: {
+    title: 'Memberships',
+    label: 'Membership Model',
+    blocks: [
+      {
+        heading: 'Premier Membership',
+        paragraphs: ['Designed for businesspeople, executives, and individuals seeking professional lifestyle management.'],
+      },
+      {
+        heading: 'Prestige Membership',
+        paragraphs: ['Designed for companies and institutions that wish to provide concierge services to their clients or employees.'],
+      },
+      {
+        heading: 'Imperial Membership',
+        paragraphs: [
+          'The highest membership tier, offering a fully integrated and personalized experience with the highest levels of privacy and support.',
+        ],
+      },
+      {
+        heading: 'Strategic Objectives of Memberships',
+        intro: 'The company aims to:',
+        bullets: [
+          'Increase recurring revenue contribution.',
+          'Strengthen client loyalty and retention.',
+          'Raise average annual client spend.',
+          'Expand WOSOL Concierge membership base across individuals and companies.',
+          'Support integration between travel, lifestyle management, and business concierge services.',
+        ],
+        paragraphs: ['The company targets gradual growth in membership revenue to reach:'],
+      },
+    ],
+    table: {
+      headers: ['Year', 'Membership Revenue'],
+      rows: [
+        ['2026', 'SAR 3 million'],
+        ['2027', 'SAR 6.5 million'],
+        ['2028', 'SAR 12 million'],
+      ],
+    },
+    closing:
+      'This makes memberships one of the most important sources of sustainable growth and long-term revenue for WOSOL Concierge.',
+  },
+  'technology-platform': {
+    title: 'Technology Platform',
+    label: 'Technology Platform',
+    blocks: [
+      {
+        heading: 'The platform provides:',
+        bullets: [
+          'Request submission',
+          'Request tracking',
+          'Personal preference management',
+          'Digital wallet',
+          'Invoices and payments',
+          'Communication with the relationship manager',
+          'Supplier management',
+          'Offer and pricing management',
+        ],
+      },
+      {
+        heading: 'Future Development',
+        bullets: [
+          'AI-powered smart assistant',
+          'Proactive recommendations',
+          'Process automation',
+          'Client behavior analysis',
+        ],
+      },
+    ],
+  },
+  'competitive-advantages': {
+    title: 'Competitive Advantages',
+    label: 'Competitive Advantages',
+    blocks: [
+      { heading: 'First Saudi Concierge Company', paragraphs: ['Operational experience extending over more than fifteen years.'] },
+      { heading: 'Exclusive Database', paragraphs: ['An integrated record of high-value client preferences.'] },
+      { heading: 'Owned Technology Platform', paragraphs: ['Connected to modern operating systems and fully owned by the company.'] },
+      { heading: 'Specialized Supplier Network', paragraphs: ['Strategic local and international relationships.'] },
+      { heading: 'Corporate Operating Contracts', paragraphs: ['An active presence within strategic projects and destinations in the Kingdom.'] },
+    ],
+  },
+  'historical-financial-performance': {
+    title: 'Historical Financial Performance',
+    label: 'Historical Financial Performance',
+    table: {
+      headers: ['Year', 'Revenue'],
+      rows: [
+        ['2021', 'SAR 6.9 million'],
+        ['2022', 'SAR 11.4 million'],
+        ['2023', 'SAR 15.3 million'],
+        ['2024', 'SAR 16.4 million'],
+        ['2025', 'SAR 23.8 million'],
+      ],
+    },
+    closing: 'Compound annual growth rate: 36%.',
+  },
+  'financial-performance-2025': {
+    title: '2025 Financial Performance',
+    label: '2025 Financial Performance',
+    metrics: [
+      ['Revenue', 'SAR 23,789,003'],
+      ['Net Profit', 'SAR 2,022,397'],
+      ['Number of Individual Clients', '120'],
+      ['Number of Corporate Clients', '5'],
+      ['Number of Employees', '66'],
+      ['Total Salaries', 'SAR 6,067,723'],
+      ['Operating Expenses', 'SAR 1,579,606'],
+    ],
+  },
+  'revenue-distribution-2025': {
+    title: '2025 Revenue Distribution',
+    label: 'Revenue Mix 2025',
+    table: {
+      headers: ['Segment', 'Revenue'],
+      rows: [
+        ['Individuals', 'SAR 16.05 million'],
+        ['Corporate', 'SAR 6.83 million'],
+        ['Government Entities', 'SAR 0.90 million'],
+        ['Total', 'SAR 23.79 million'],
+      ],
+    },
+  },
+  'current-projects': {
+    title: 'Current Projects',
+    label: 'Current Projects',
+    table: {
+      headers: ['Project', 'Expected Annual Revenue'],
+      rows: [
+        ['KAFD', 'SAR 10 million'],
+        ['Tameer', 'SAR 1.125 million'],
+        ['Al Mamlaka', 'SAR 800 thousand'],
+        ['Emergency Forces', 'SAR 1 million'],
+        ['Walaa Plus', 'SAR 540 thousand'],
+        ['Cityscape', 'SAR 500 thousand'],
+      ],
+    },
+  },
+  'strategic-opportunities': {
+    title: 'Strategic Opportunities Under Negotiation',
+    label: 'Strategic Opportunities',
+    bullets: [
+      'Executive Airport',
+      'Riyadh Air',
+      'STC Elite',
+      'WeBook',
+      'Qiddiya',
+      'CORE Club',
+      'National Events Center',
+      'Events Investment Fund',
+      'Albawani',
+      'Solitaire',
+    ],
+  },
+  'strategic-plan': {
+    title: 'Strategic Plan 2026 – 2028',
+    label: 'Strategic Plan 2026–2028',
+    blocks: [
+      { heading: 'Membership Expansion', paragraphs: ['Increase recurring revenue.'] },
+      { heading: 'Corporate Contract Expansion', paragraphs: ['Expand with government entities and major companies.'] },
+      { heading: 'Technology Expansion', paragraphs: ['Enhance the platform and artificial intelligence applications.'] },
+      { heading: 'Destination Operations', paragraphs: ['Expand concierge and hospitality service operations inside major projects.'] },
+    ],
+  },
+  'financial-forecasts': {
+    title: 'Financial Forecasts',
+    label: 'Financial Forecasts',
+    table: {
+      headers: ['Item', '2026', '2027', '2028'],
+      rows: [
+        ['Revenue', 'SAR 33 million', 'SAR 42.5 million', 'SAR 55 million'],
+        ['Membership Revenue', 'SAR 3 million', 'SAR 6.5 million', 'SAR 12 million'],
+        ['Net Profit', 'SAR 3.5 million', 'SAR 6 million', 'SAR 9.5 million'],
+        ['Net Profit Margin', '10.6%', '14.1%', '17.3%'],
+      ],
+    },
+    closing: 'Strategic objectives by 2028',
+    bullets: [
+      'Exceed SAR 55 million in annual revenue.',
+      'Achieve net profit exceeding SAR 9.5 million.',
+      'Build the largest Saudi platform for lifestyle management and concierge.',
+      'Strengthen recurring revenue from memberships and contracts.',
+      'Expand hospitality and destination service operations.',
+      'Develop an AI-powered technology platform that provides a proactive and personalized client experience.',
+    ],
+  },
+  'investment-thesis': {
+    title: 'Investment Thesis',
+    label: 'Investment Thesis',
+    paragraphs: [
+      'WOSOL Concierge represents a unique investment opportunity in the Saudi market due to a set of competitive advantages that are difficult to replicate or build within a short period.',
+    ],
+    blocks: [
+      {
+        heading: '1. Market Leadership',
+        paragraphs: [
+          'WOSOL Concierge is the first Saudi company specialized in concierge services and lifestyle management, with more than 15 years of operational experience serving VIPs and high-net-worth clients.',
+        ],
+      },
+      {
+        heading: '2. High-Value Client Base',
+        paragraphs: [
+          'The company owns a client base that includes a number of VIPs, businesspeople, and executives, with high average annual spend compared with the market average.',
+          'The average spend of the top ten clients exceeds SAR 1.8 million annually per client.',
+        ],
+      },
+      {
+        heading: '3. Diversified Business Model',
+        paragraphs: ['The company relies on three main revenue engines:'],
+        bullets: ['Travel management', 'Lifestyle management', 'Business concierge'],
+        after:
+          'In addition to corporate contracts, memberships, and the technology platform.\nThis diversification reduces operational risk and creates multiple growth opportunities.',
+      },
+      {
+        heading: '4. Owned Technology Platform',
+        paragraphs: [
+          'The company has invested more than SAR 2.1 million in developing a fully owned integrated technology platform.',
+          'The platform forms the basis for future expansion, improved operational efficiency, higher profitability, and the conversion of part of the services into a scalable digital model.',
+        ],
+      },
+      {
+        heading: '5. Long-Term Strategic Contracts',
+        paragraphs: [
+          'The company has existing contracts with strategic entities and projects inside the Kingdom, in addition to significant expansion opportunities with a number of major institutions and destinations.',
+        ],
+      },
+      {
+        heading: '6. Benefit from Saudi Vision 2030',
+        paragraphs: [
+          'The company operates in sectors witnessing exceptional growth supported by Saudi Vision 2030, including:',
+        ],
+        bullets: [
+          'Tourism',
+          'Hospitality',
+          'Entertainment',
+          'Aviation',
+          'Giga-projects',
+          'Loyalty programs and customer experience',
+        ],
+        after: 'This provides a favorable environment for sustainable growth over the coming years.',
+      },
+    ],
+  },
+  'valuation-narrative': {
+    title: 'Valuation Narrative',
+    label: 'Valuation Narrative',
+    paragraphs: [
+      'The company\'s potential to reach a valuation exceeding SAR 100 million in the coming years is based on a set of operational, strategic, and financial factors.',
+    ],
+    blocks: [
+      {
+        heading: 'First: Financial Growth',
+        paragraphs: [
+          'The company achieved revenue growth from:',
+          'SAR 6.9 million in 2021',
+          'to',
+          'SAR 23.8 million in 2025',
+          'with a compound annual growth rate of approximately 36%.',
+          'The company targets reaching:',
+          'SAR 55 million in annual revenue by 2029.',
+        ],
+      },
+      {
+        heading: 'Second: Profitability Growth',
+        paragraphs: [
+          'Net profit is expected to rise to:',
+          'SAR 9.5 million annually by 2029',
+          'as a result of:',
+        ],
+        bullets: [
+          'Expansion in corporate contracts',
+          'Growth in membership revenue',
+          'Improved operational efficiency',
+          'Greater reliance on technology',
+        ],
+      },
+      {
+        heading: 'Third: Recurring Revenue',
+        paragraphs: ['The company is working to convert a growing portion of revenue into recurring revenue through:'],
+        bullets: ['Premier Membership', 'Prestige Membership', 'Imperial Membership'],
+        after:
+          'In addition to long-term annual contracts.\nThis improves revenue quality and increases the company\'s attractiveness to investors.',
+      },
+      {
+        heading: 'Fourth: Technology Platform Value',
+        paragraphs: [
+          'As the number of users increases, reliance on the application grows, and AI services are launched, the technology platform becomes an independent strategic asset that can add significant value to the company valuation.',
+        ],
+      },
+      {
+        heading: 'Fifth: Corporate Expansion',
+        paragraphs: ['The company is developing strategic growth opportunities with:'],
+        bullets: [
+          'Executive Airport',
+          'Riyadh Air',
+          'STC',
+          'WeBook',
+          'Qiddiya',
+          'Solitaire',
+          'National Events Center',
+          'Events Investment Fund',
+        ],
+        after: 'These opportunities represent additional growth drivers that are not fully included in the base forecasts.',
+      },
+      {
+        heading: 'Target Valuation Scenario',
+        paragraphs: ['If the operating plan is achieved and the company reaches:'],
+        bullets: [
+          'Annual revenue exceeding SAR 55 million',
+          'Net profit exceeding SAR 9.5 million',
+          'Growth in memberships and recurring revenue',
+          'Expansion of the technology platform',
+        ],
+        after:
+          'The company becomes qualified to reach a valuation exceeding SAR 100 million based on profitability and growth multiples applied to comparable companies in luxury services, technology, and hospitality sectors.',
+      },
+    ],
+  },
+  'exit-strategy': {
+    title: 'Potential Exit Strategy',
+    label: 'Exit Strategy',
+    paragraphs: ['Future options for shareholders include:'],
+    bullets: [
+      'Selling a strategic stake to an operating or investment partner.',
+      'Introducing a private equity fund.',
+      'Merging with a hospitality or luxury services platform.',
+      'Introducing a technology investor to support regional expansion.',
+      'Listing on the Parallel Market (Nomu) over the long term.',
+    ],
+    closing:
+      'The company aims to build a scalable and investable institutional entity that maximizes shareholder value over the coming years.',
+  },
+  conclusion: {
+    title: 'Conclusion',
+    label: 'Final Insight',
+    paragraphs: [
+      'WOSOL Concierge has a unique combination of operational experience, strategic relationships, corporate contracts, a technology platform, and a diversified business model built on travel management, lifestyle management, and business concierge. This positions the company strongly to benefit from the accelerating growth of the luxury services and hospitality sector in the Kingdom of Saudi Arabia and achieve sustainable growth over the coming years.',
+    ],
+  },
+};
+
+export const businessPlanEn = {
+  title: 'WOSOL Concierge',
+  subtitle: ['Business Plan & Financial Forecast', 'خطة الأعمال والتوقعات المالية'],
+  meta: 'Business Plan · Confidential · 2026–2028',
+  sections: businessPlan.sections.map((section) => ({
+    ...section,
+    ...englishSectionOverrides[section.id],
+  })),
 };

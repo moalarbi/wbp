@@ -29,6 +29,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html[dir='ltr'] body {
+  direction: ltr;
+  font-family: 'Poppins', sans-serif;
+}
+
 a {
   color: inherit;
 }
@@ -65,6 +70,41 @@ textarea {
   padding: 40px 0 36px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 72px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid var(--border);
+}
+
+.language-toggle button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 7px 10px;
+  min-width: 58px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  line-height: 1;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.language-toggle button:hover,
+.language-toggle button.active {
+  background: var(--navy-deep);
+  color: var(--beige-warm);
 }
 
 .header-meta,
@@ -183,6 +223,22 @@ textarea {
   font-size: clamp(18px, 2.4vw, 25px);
   font-weight: 500;
   line-height: 1.7;
+}
+
+.cover-subtitle span {
+  display: block;
+}
+
+.cover-subtitle span + span {
+  margin-top: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82em;
+  letter-spacing: 0.08em;
+}
+
+html[dir='ltr'] .cover-subtitle span + span {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  letter-spacing: 0;
 }
 
 .cover-facts {
@@ -887,6 +943,65 @@ td:first-child {
   color: var(--text-light);
 }
 
+html[dir='ltr'] .section-nav-list a {
+  border-right: 0;
+  border-left: 2px solid transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+html[dir='ltr'] .section-nav-list a:hover,
+html[dir='ltr'] .section-nav-list a.active {
+  border-right-color: transparent;
+  border-left-color: var(--navy-light);
+}
+
+html[dir='ltr'] .section-title,
+html[dir='ltr'] .section-body,
+html[dir='ltr'] .content-card h3,
+html[dir='ltr'] .metric-card strong,
+html[dir='ltr'] .facts-list strong,
+html[dir='ltr'] .closing-section h3 {
+  letter-spacing: 0;
+}
+
+html[dir='ltr'] .bullet-list li {
+  padding-right: 0;
+  padding-left: 17px;
+}
+
+html[dir='ltr'] .bullet-list li::before {
+  right: auto;
+  left: 0;
+}
+
+html[dir='ltr'] .chart-tooltip {
+  direction: ltr;
+  text-align: left;
+}
+
+html[dir='ltr'] .chart-tooltip div {
+  font-family: 'Poppins', sans-serif;
+}
+
+html[dir='ltr'] .chart-legend {
+  direction: ltr;
+}
+
+html[dir='ltr'] .recharts-wrapper,
+html[dir='ltr'] .recharts-text,
+html[dir='ltr'] .recharts-legend-item-text {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+html[dir='ltr'] .donut-center strong,
+html[dir='ltr'] .project-share-center strong {
+  direction: ltr;
+}
+
+html[dir='ltr'] th {
+  text-align: left;
+}
+
 @media (max-width: 980px) {
   .page-wrapper {
     padding: 0 24px 60px;
@@ -931,6 +1046,17 @@ td:first-child {
   .section-nav-list a:hover,
   .section-nav-list a.active {
     border-right-color: transparent;
+    border-bottom-color: var(--navy-light);
+  }
+
+  html[dir='ltr'] .section-nav-list a {
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+
+  html[dir='ltr'] .section-nav-list a:hover,
+  html[dir='ltr'] .section-nav-list a.active {
+    border-left-color: transparent;
     border-bottom-color: var(--navy-light);
   }
 
