@@ -630,7 +630,8 @@ export const businessPlan = {
       label: 'Final Insight',
       kind: 'closing',
       paragraphs: [
-        'تمتلك وصول كونسيرج مزيجاً فريداً من الخبرة التشغيلية، والعلاقات الاستراتيجية، والعقود المؤسسية، والمنصة التقنية، ونموذج أعمال متنوع يعتمد على إدارة السفر وإدارة نمط الحياة وكونسيرج الأعمال، مما يضعها في موقع قوي للاستفادة من النمو المتسارع لقطاع الخدمات الفاخرة والضيافة في المملكة العربية السعودية وتحقيق نمو مستدام خلال السنوات القادمة.',
+        'تمتلك وصول كونسيرج نموذج أعمال متكاملاً يجمع بين الخبرة التشغيلية الممتدة، والعقود المؤسسية، وقاعدة العملاء عالية القيمة، ومنصة تقنية مملوكة بالكامل للشركة ومطورة داخلياً، تُعد من أوائل المنصات المتخصصة في خدمات الكونسيرج وإدارة نمط الحياة في المنطقة.',
+        'ومع النمو المتسارع لقطاع السياحة والضيافة والخدمات الفاخرة في المملكة العربية السعودية، وتوسع الشركة في التحول الرقمي وتنويع مصادر الإيرادات، تتمتع وصول كونسيرج بمقومات قوية لتحقيق نمو مستدام وتعزيز مكانتها كمنصة رائدة في قطاع الكونسيرج والخدمات الراقية خلال السنوات القادمة.',
       ],
     },
   ],
@@ -1145,7 +1146,8 @@ const englishSectionOverrides = {
     title: 'Conclusion',
     label: 'Final Insight',
     paragraphs: [
-      'WOSOL Concierge has a unique combination of operational experience, strategic relationships, corporate contracts, a technology platform, and a diversified business model built on travel management, lifestyle management, and business concierge. This positions the company strongly to benefit from the accelerating growth of the luxury services and hospitality sector in the Kingdom of Saudi Arabia and achieve sustainable growth over the coming years.',
+      'WOSOL Concierge has an integrated business model that combines extended operational experience, corporate contracts, a high-value client base, and a fully owned technology platform developed internally, positioning it among the first specialized platforms for concierge and lifestyle management services in the region.',
+      'With the rapid growth of tourism, hospitality, and premium services in the Kingdom of Saudi Arabia, alongside the company’s expansion in digital transformation and revenue diversification, WOSOL Concierge has strong fundamentals to achieve sustainable growth and strengthen its position as a leading platform in the concierge and premium services sector over the coming years.',
     ],
   },
 };
