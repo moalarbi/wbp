@@ -545,6 +545,17 @@ html[dir='ltr'] .cover-subtitle span + span {
   line-height: 1.55;
 }
 
+#section-investment-thesis .content-grid {
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+#section-investment-thesis .content-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 #section-business-sectors .content-grid,
 #section-memberships .content-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));

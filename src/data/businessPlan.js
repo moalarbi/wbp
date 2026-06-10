@@ -523,17 +523,8 @@ export const businessPlan = {
         {
           heading: '6. الاستفادة من رؤية المملكة 2030',
           paragraphs: [
-            'تعمل الشركة في قطاعات تشهد نمواً استثنائياً مدعوماً برؤية المملكة 2030، بما في ذلك:',
+            'تعمل الشركة في قطاعات تشهد نمواً استثنائياً مدعوماً برؤية المملكة 2030، بما في ذلك السياحة والضيافة والترفيه والطيران والمشاريع العملاقة وبرامج الولاء وتجربة العملاء، مما يوفر بيئة مواتية للنمو المستدام خلال السنوات القادمة.',
           ],
-          bullets: [
-            'السياحة',
-            'الضيافة',
-            'الترفيه',
-            'الطيران',
-            'المشاريع العملاقة',
-            'برامج الولاء وتجربة العملاء',
-          ],
-          after: 'مما يوفر بيئة مواتية للنمو المستدام خلال السنوات القادمة.',
         },
       ],
     },
@@ -1056,17 +1047,8 @@ const englishSectionOverrides = {
       {
         heading: '6. Benefit from Saudi Vision 2030',
         paragraphs: [
-          'The company operates in sectors witnessing exceptional growth supported by Saudi Vision 2030, including:',
+          'The company operates in sectors witnessing exceptional growth supported by Saudi Vision 2030, including tourism, hospitality, entertainment, aviation, giga-projects, loyalty programs, and customer experience, creating a favorable environment for sustainable growth over the coming years.',
         ],
-        bullets: [
-          'Tourism',
-          'Hospitality',
-          'Entertainment',
-          'Aviation',
-          'Giga-projects',
-          'Loyalty programs and customer experience',
-        ],
-        after: 'This provides a favorable environment for sustainable growth over the coming years.',
       },
     ],
   },
