@@ -123,7 +123,7 @@ export const businessPlan = {
         {
           heading: 'الرؤية',
           paragraphs: [
-            'أن تصبح وصول كونسيرج المنصة الرائدة لإدارة نمط الحياة والخدمات الفاخرة في المملكة العربية السعودية ودول الخليج.',
+            'أن تصبح وصول المنصة الرائدة عالمياً التي تمكّن الأعضاء من الوصول إلى الخدمات والتجارب والحلول الشخصية من خلال نقطة اتصال واحدة في أي مكان حول العالم.',
           ],
         },
         {
@@ -199,7 +199,7 @@ export const businessPlan = {
             'الفلل الخاصة',
             'التأشيرات',
             'خدمات الاستقبال والتوديع',
-            'الرحلات البحرية',
+            'الكروز',
             'الشاليهات',
             'البنتهاوس',
             'شوفير سيرفس',
@@ -447,7 +447,7 @@ export const businessPlan = {
       label: 'Strategic Plan 2027–2029',
       blocks: [
         { heading: 'التوسع في العضويات', paragraphs: ['زيادة الإيرادات المتكررة.'] },
-        { heading: 'التوسع في إنفاق العملاء' },
+        { heading: 'التوسع في إنفاق العملاء', paragraphs: ['رفع متوسط الإنفاق من خلال خدمات وتجارب ذات قيمة أعلى.'] },
         { heading: 'التوسع في العقود المؤسسية', paragraphs: ['التوسع مع الجهات الحكومية والشركات الكبرى.'] },
         { heading: 'التوسع التقني', paragraphs: ['تعزيز المنصة وتطبيقات الذكاء الاصطناعي.'] },
         { heading: 'تشغيل الوجهات', paragraphs: ['التوسع في تشغيل خدمات الكونسيرج والضيافة داخل المشاريع الكبرى.'] },
@@ -693,7 +693,7 @@ const englishSectionOverrides = {
       {
         heading: 'Vision',
         paragraphs: [
-          'To become the leading platform for lifestyle management and luxury services in the Kingdom of Saudi Arabia and the Gulf region.',
+          'To become WOSOL, the globally leading platform that enables members to access services, experiences, and personalized solutions through a single point of contact anywhere in the world.',
         ],
       },
       {
@@ -985,7 +985,7 @@ const englishSectionOverrides = {
     label: 'Strategic Plan 2027–2029',
     blocks: [
       { heading: 'Membership Expansion', paragraphs: ['Increase recurring revenue.'] },
-      { heading: 'Expansion in Client Spending' },
+      { heading: 'Expansion in Client Spending', paragraphs: ['Increase average spend through higher-value services and experiences.'] },
       { heading: 'Corporate Contract Expansion', paragraphs: ['Expand with government entities and major companies.'] },
       { heading: 'Technology Expansion', paragraphs: ['Enhance the platform and artificial intelligence applications.'] },
       { heading: 'Destination Operations', paragraphs: ['Expand concierge and hospitality service operations inside major projects.'] },
