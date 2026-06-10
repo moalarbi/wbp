@@ -476,6 +476,28 @@ html[dir='ltr'] .cover-subtitle span + span {
   max-width: 760px;
 }
 
+.section-lead {
+  max-width: 980px;
+  margin: 0 0 26px;
+  padding: 0 0 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-lead h3 {
+  color: var(--navy-deep);
+  font-size: 21px;
+  line-height: 1.55;
+  margin: 0 0 10px;
+}
+
+.section-lead p {
+  color: var(--text-body);
+  font-size: 16px;
+  line-height: 2;
+  margin: 0;
+  max-width: 920px;
+}
+
 .prose-block p,
 .content-card p,
 .section-closing {

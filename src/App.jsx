@@ -311,6 +311,7 @@ function SectionBody({ section, copy, language }) {
   return (
     <>
       <Paragraphs paragraphs={section.paragraphs} />
+      {section.lead ? <SectionLead lead={section.lead} /> : null}
       {section.metrics ? <MetricsGrid metrics={section.metrics} /> : null}
       {section.facts ? <FactsTable facts={section.facts} /> : null}
       {section.bullets && !section.blocks ? <BulletGrid bullets={section.bullets} /> : null}
@@ -322,6 +323,15 @@ function SectionBody({ section, copy, language }) {
       {section.closing ? <p className="section-closing">{section.closing}</p> : null}
       {section.bullets && section.blocks ? <BulletGrid bullets={section.bullets} /> : null}
     </>
+  );
+}
+
+function SectionLead({ lead }) {
+  return (
+    <div className="section-lead">
+      <h3>{lead.title}</h3>
+      <p>{renderInlineText(lead.body)}</p>
+    </div>
   );
 }
 
