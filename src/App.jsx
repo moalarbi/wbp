@@ -63,7 +63,7 @@ const localizedCopy = {
     footerMeta: 'Confidential · 2027–2029',
     totalLabel: 'الإجمالي',
     expectedTotalLabel: 'إجمالي متوقع',
-    totalRevenue2025: '23.79 مليون ريال',
+    totalRevenue2025: '22.61 مليون ريال',
     currentProjectsTotal: '9.965M ريال',
     chartTitles: {
       membershipRevenue: ['نمو إيرادات العضويات', 'Membership Revenue'],
@@ -92,7 +92,7 @@ const localizedCopy = {
     footerMeta: 'Confidential · 2027–2029',
     totalLabel: 'Total',
     expectedTotalLabel: 'Expected Total',
-    totalRevenue2025: 'SAR 23.79 million',
+    totalRevenue2025: 'SAR 22.61 million',
     currentProjectsTotal: 'SAR 9.965M',
     chartTitles: {
       membershipRevenue: ['Membership Revenue Growth', 'Membership Revenue'],
@@ -122,9 +122,9 @@ const localizedChartData = {
       display: item.displayEn || `SAR ${item.revenue} million`,
     })),
     revenueDistribution2025: [
-      { ...chartData.revenueDistribution2025[0], sector: 'Individuals', display: 'SAR 16.05 million' },
-      { ...chartData.revenueDistribution2025[1], sector: 'Corporate', display: 'SAR 6.83 million' },
-      { ...chartData.revenueDistribution2025[2], sector: 'Government Entities', display: 'SAR 0.90 million' },
+      { ...chartData.revenueDistribution2025[0], sector: 'Individuals', display: 'SAR 15.26 million' },
+      { ...chartData.revenueDistribution2025[1], sector: 'Corporate', display: 'SAR 6.49 million' },
+      { ...chartData.revenueDistribution2025[2], sector: 'Government Entities', display: 'SAR 0.86 million' },
     ],
     currentProjects: [
       { ...chartData.currentProjects[0], project: 'KAFD', display: 'SAR 6 million' },
