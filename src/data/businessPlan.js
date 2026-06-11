@@ -7,9 +7,9 @@ export const chartData = {
   historicalRevenue: [
     { year: '2021', revenue: 6.9, display: '6.9 مليون ريال' },
     { year: '2022', revenue: 11.4, display: '11.4 مليون ريال' },
-    { year: '2023', revenue: 15.08063808, display: '15,080,638.08 ريال', displayEn: 'SAR 15,080,638.08' },
-    { year: '2024', revenue: 15.30718905, display: '15,307,189.05 ريال', displayEn: 'SAR 15,307,189.05' },
-    { year: '2025', revenue: 22.60714125, display: '22,607,141.25 ريال', displayEn: 'SAR 22,607,141.25' },
+    { year: '2023', revenue: 15.08063808, display: '15.08 مليون ريال', displayEn: 'SAR 15.08 million' },
+    { year: '2024', revenue: 15.30718905, display: '15.31 مليون ريال', displayEn: 'SAR 15.31 million' },
+    { year: '2025', revenue: 22.60714125, display: '22.61 مليون ريال', displayEn: 'SAR 22.61 million' },
   ],
   revenueDistribution2025: [
     { sector: 'الأفراد', revenue: 15.25839432558873, display: '15.26 مليون ريال', displayEn: 'SAR 15.26 million' },
@@ -366,9 +366,9 @@ export const businessPlan = {
         rows: [
           ['2021', '6.9 مليون ريال'],
           ['2022', '11.4 مليون ريال'],
-          ['2023', '15,080,638.08 ريال'],
-          ['2024', '15,307,189.05 ريال'],
-          ['2025', '22,607,141.25 ريال'],
+          ['2023', '15.08 مليون ريال'],
+          ['2024', '15.31 مليون ريال'],
+          ['2025', '22.61 مليون ريال'],
         ],
       },
       closing: 'معدل النمو السنوي المركب: 34.5%.',
@@ -908,9 +908,9 @@ const englishSectionOverrides = {
       rows: [
         ['2021', 'SAR 6.9 million'],
         ['2022', 'SAR 11.4 million'],
-        ['2023', 'SAR 15,080,638.08'],
-        ['2024', 'SAR 15,307,189.05'],
-        ['2025', 'SAR 22,607,141.25'],
+        ['2023', 'SAR 15.08 million'],
+        ['2024', 'SAR 15.31 million'],
+        ['2025', 'SAR 22.61 million'],
       ],
     },
     closing: 'Compound annual growth rate: 34.5%.',
