@@ -119,7 +119,7 @@ const localizedChartData = {
     })),
     historicalRevenue: chartData.historicalRevenue.map((item) => ({
       ...item,
-      display: `SAR ${item.revenue} million`,
+      display: item.displayEn || `SAR ${item.revenue} million`,
     })),
     revenueDistribution2025: [
       { ...chartData.revenueDistribution2025[0], sector: 'Individuals', display: 'SAR 16.05 million' },
