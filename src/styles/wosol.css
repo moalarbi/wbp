@@ -155,7 +155,7 @@ textarea {
   font-weight: 400;
   letter-spacing: 0.30em;
   text-transform: uppercase;
-  color: var(--navy-light);
+  color: var(--navy-deep);
 }
 
 .title-block {
@@ -205,18 +205,21 @@ textarea {
 }
 
 .cover-logo {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .cover-logo .logo-name {
-  font-size: clamp(38px, 5vw, 58px);
-  letter-spacing: 0.22em;
+  font-size: clamp(72px, 10.5vw, 118px);
+  font-weight: 700;
+  letter-spacing: 0.23em;
+  color: var(--navy-deep);
 }
 
 .cover-logo .logo-sub {
-  font-size: clamp(10px, 1.2vw, 13px);
-  letter-spacing: 0.34em;
-  margin-top: 4px;
+  font-size: clamp(25px, 3.2vw, 42px);
+  letter-spacing: 0.38em;
+  color: var(--navy-deep);
+  margin-top: 18px;
 }
 
 .cover-subtitle {
@@ -1256,11 +1259,14 @@ html[dir='ltr'] th {
   }
 
   .cover-logo .logo-name {
-    font-size: 34px;
+    font-size: clamp(46px, 15vw, 72px);
+    letter-spacing: 0.18em;
   }
 
   .cover-logo .logo-sub {
-    font-size: 9px;
+    font-size: clamp(16px, 5vw, 25px);
+    letter-spacing: 0.24em;
+    margin-top: 12px;
   }
 
   .cover-facts {
